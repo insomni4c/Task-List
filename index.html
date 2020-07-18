@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <title>Task List</title>
+  <style>
+      body {
+      background-image: url('img1.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+    }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <div id="main" class="card yellow lighten-4">
+          <div class="card-content">
+            <span class="card-title"><h5>Welcome to your planner.</h5></span>
+            <div class="row">
+              <br></br>
+              <h5 id="introText">&nbsp;&nbsp;Add a task to get started</h5>
+
+              <form id="task-form">
+                <div class="input-field col s12">
+                  <input type="text" name="task" id="task">
+                  <label for="task">New Task</label>
+                </div>
+                <input type="submit" value="Add Task" class="btn deep-purple darken-3">
+              </form>
+            </div>
+          </div>
+          <div class="card-action">
+            <h5 id="task-title">Tasks</h5>
+            <div class="input-field col s12">
+              <input type="text" name="filter" id="filter">
+              <label for="filter">Filter Tasks</label>
+            </div>
+            <ul class="collection"></ul>
+            <a href="#" class="clear-tasks btn black">Clear Tasks</a>
+          </div>
+        </div>
+        <p align="right" ><font size="1" style="background-color: #03fc8c"><b>This is a Saswat Biswas tool. Hope you liked it!</b></font></p>
+      </div>
+    </div>
+  </div>
+
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
